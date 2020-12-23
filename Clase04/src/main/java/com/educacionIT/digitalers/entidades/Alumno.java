@@ -2,17 +2,14 @@ package com.educacionIT.digitalers.entidades;
 
 import java.util.Arrays;
 
-
-
-public class Alumno extends Persona {
+public class Alumno extends Persona{
 	private String[] cursos;
-	
+
 	//Constructors
 	public Alumno() {
 	}
-	public Alumno(String razonSocial, Documento 	
-	documento, Byte edad, String[] cursos) {
-		super(razonSocial, documento, edad);
+	public Alumno(String descripcion, Documento documento, Byte edad, String[] cursos) {
+		super(descripcion, documento, edad);
 		this.cursos = cursos;
 	}
 	
@@ -29,14 +26,25 @@ public class Alumno extends Persona {
 	public String toString() {
 		return "Alumno " + super.toString() + ", cursos:" + Arrays.toString(cursos);
 	}
-	public String openArchive() {
-		System.out.println("Abriendo...");
-		return null;
+	
+	public void save() {
+		System.out.println("Saving student...");
+		
 	}
 	
-	public Boolean saveArchive() {
-		System.out.println("Guardando...");
+	public Boolean insert() {
+		// TODO Auto-generated method stub
 		return null;
 	}
 
+	public Boolean delete() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+	
+	
+	
 }

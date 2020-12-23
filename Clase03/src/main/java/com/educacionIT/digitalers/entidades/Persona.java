@@ -39,7 +39,7 @@ public abstract class Persona implements Archivo{
 	//Methods
 	@Override
 	public String toString() {
-		return "Persona Nombre: " + razonSocial + ", documento: " + documento + ", edad: " + edad;
+		return "Nombre: " + razonSocial + ", documento: " + documento + ", edad: " + edad;
 	}
 	
 
