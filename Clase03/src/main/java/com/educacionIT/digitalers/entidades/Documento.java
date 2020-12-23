@@ -29,5 +29,10 @@ public final class Documento {
 	public void setNum(String num) {
 		this.num = num;
 	}
-	
+
+	//Methods
+	@Override
+	public String toString() {
+		return tipo + " num: " + num;
+	}
 }

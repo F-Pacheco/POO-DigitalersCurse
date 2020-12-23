@@ -1,9 +1,12 @@
 package com.educacionIT.digitalers.entidades;
 
-public class Persona {
+import com.educacionIT.digitalers.interfaces.Archivo;
+
+public abstract class Persona implements Archivo{
 	private String razonSocial;
 	private Documento documento;
 	private Byte edad;
+
 	//Constructors
 	public Persona() {
 	}
@@ -31,6 +34,15 @@ public class Persona {
 	}
 	public void setEdad(Byte edad) {
 		this.edad = edad;
-	}	
+	}
+	
+	//Methods
+	@Override
+	public String toString() {
+		return "Persona Nombre: " + razonSocial + ", documento: " + documento + ", edad: " + edad;
+	}
+	
+
+	
 	
 }

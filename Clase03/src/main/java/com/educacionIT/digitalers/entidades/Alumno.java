@@ -1,6 +1,10 @@
 package com.educacionIT.digitalers.entidades;
 
-public class Alumno extends Persona{
+import java.util.Arrays;
+
+
+
+public class Alumno extends Persona {
 	private String[] cursos;
 	
 	//Constructors
@@ -20,4 +24,20 @@ public class Alumno extends Persona{
 		this.cursos = cursos;
 	}
 	
+	@Override
+	public String toString() {
+		return "Alumno Nombre: " + getRazonSocial() + " " + getDocumento() + ", edad: "
+				+ getEdad() + ", cursos: " + Arrays.toString(cursos);
+	}
+	
+	public String openArchive() {
+		System.out.println("Abriendo...");
+		return null;
+	}
+	
+	public Boolean saveArchive() {
+		System.out.println("Guardando...");
+		return null;
+	}
+
 }

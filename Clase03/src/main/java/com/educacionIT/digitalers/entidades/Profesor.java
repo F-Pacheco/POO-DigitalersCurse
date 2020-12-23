@@ -18,4 +18,21 @@ public class Profesor extends Persona{
 		this.pago = pago;
 	}
 	
+	@Override
+	public String toString() {
+		return "Profesor Nombre: " + getRazonSocial() + " " + getDocumento() + ", edad: "
+				+ getEdad() + ", pago: " + pago;
+	}
+
+	public Boolean saveArchive() {
+		System.out.println("Guardando...");
+		return null;
+	}
+
+	public String openArchive() {
+		System.out.println("Abriendo...");
+		return null;
+	}
+	
+	
 }
